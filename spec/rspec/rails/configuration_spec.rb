@@ -62,7 +62,7 @@ RSpec.describe "Configuration" do
                      :default => true
 
     include_examples "adds setting",
-                     :use_transactional_fixtures,
+                     :use_transactional_tests,
                      :alias_with => :use_transactional_examples
 
     include_examples "adds setting", :use_instantiated_fixtures

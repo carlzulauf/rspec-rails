@@ -2,7 +2,7 @@ When you run `rails generate rspec:install`, the `spec/rails_helper.rb` file
 includes the following configuration:
 
     RSpec.configure do |config|
-      config.use_transactional_fixtures = true
+      config.use_transactional_tests = true
     end
 
 The name of this setting is a bit misleading. What it really means in Rails
@@ -20,7 +20,7 @@ If you prefer to manage the data yourself, or using another tool like
 simply tell RSpec to tell Rails not to manage transactions:
 
     RSpec.configure do |config|
-      config.use_transactional_fixtures = false
+      config.use_transactional_tests = false
     end
 
 ### Data created in `before(:each)` are rolled back
